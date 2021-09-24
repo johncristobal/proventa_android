@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:background="@drawable/backwindow"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:id="@+id/lauotHeader"
+            android:background="@color/negro"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+        <ImageButton
+                android:id="@+id/ReturnODButton"
+                android:layout_width="50dp"
+                android:layout_height="0dp"
+                android:background="@android:color/transparent"
+                android:src="@drawable/backscreenicon"
+                android:textColor="@color/verdeclaro"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+                android:id="@+id/TitleOpcionesDescarga"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/nunito_semibold"
+                android:gravity="center"
+                android:text="Opciones de descarga"
+                android:textAlignment="center"
+                android:textColor="@color/blanco"
+                android:textSize="16sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <LinearLayout
+            android:id="@+id/layoutOD"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white"
+            android:layout_marginTop="15dp"
+            android:orientation="horizontal">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:id="@+id/layCalidad"
+                android:background="@drawable/backwindow">
+
+
+            <TextView
+                    android:id="@+id/calidadDescarga"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/backwindow"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginStart="20dp"
+                    android:padding="10dp"
+                    android:text="Calidad de descarga"
+                    android:textColor="@color/blanco"
+                    android:textSize="15sp"
+                    android:fontFamily="@font/nunito"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+            <Button
+                    android:id="@+id/calidadD"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginEnd="20dp"
+                    android:background="@drawable/backwindow"
+                    android:gravity="end"
+                    android:padding="10dp"
+                    android:text="ALTA"
+                    android:textColor="@color/blanco"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </LinearLayout>
+
+    <LinearLayout
+            android:id="@+id/layoutwifi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white"
+            android:orientation="horizontal">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:id="@+id/laywifi"
+                android:background="@drawable/backwindow">
+
+
+            <TextView
+                    android:id="@+id/descargawifi"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/backwindow"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginStart="20dp"
+                    android:padding="10dp"
+                    android:text="Descargar solo por Wi-Fi"
+                    android:textColor="@color/blanco"
+                    android:textSize="15sp"
+                    android:fontFamily="@font/nunito"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+            <Switch
+                    android:id="@+id/switchWiFi"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginEnd="25dp"
+                    android:checked="true"
+                    android:theme="@style/SCBSwitch"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:tools="http://schemas.android.com/tools"
+             android:layout_width="match_parent"
+              android:layout_height="match_parent"
+             android:orientation="vertical"
+        android:background="@drawable/backwindow">
+
+    <!-- TODO: Update blank fragment layout -->
+    <TextView
+            android:id="@+id/Ajustes"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/backwindow"
+            android:textColor="@color/blanco"
+            android:text="Ajustes"
+            android:gravity="center"
+            android:textAlignment="center"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+    <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@drawable/backwindow">
+
+                <LinearLayout
+                        android:id="@+id/layoutAjustes"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/backwindow"
+                        android:orientation="vertical">
+
+                    <TextView
+                            android:id="@+id/Video"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textSize="14sp"
+                            android:padding="10dp"
+                            android:textColor="@color/blanco"
+                            android:background="@drawable/backwindow"
+                            android:text="AJUSTES DE VIDEO"
+                            android:textAlignment="viewStart"
+                            android:textStyle="bold"
+                            android:fontFamily="@font/nunito"/>
+
+                    <Button
+                            android:id="@+id/OpcionDescarga"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/blanco"
+                            android:background="@drawable/backwindow"
+                            android:fontFamily="@font/nunito"
+                            android:padding="10dp"
+                            android:text="Opciones de descarga"
+                            android:textAlignment="viewStart"
+                            android:textAllCaps="false"
+                            android:textSize="14sp"/>
+
+                    <Button
+                            android:id="@+id/OpcionVideo"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/blanco"
+                            android:background="@drawable/backwindow"
+                            android:padding="10dp"
+                            android:fontFamily="@font/nunito"
+                            android:textSize="14sp"
+                            android:textAllCaps="false"
+                            android:text="Opciones de reproducción de video"
+                            android:textAlignment="viewStart" />
+
+                    <Button
+                            android:id="@+id/CapitulosDescargados"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/blanco"
+                            android:background="@drawable/backwindow"
+                            android:fontFamily="@font/nunito"
+                            android:padding="10dp"
+                            android:textSize="14sp"
+                            android:textAllCaps="false"
+                            android:text="Capítulos descargados"
+                            android:textAlignment="viewStart" />
+                </LinearLayout>
+
+                <LinearLayout
+                        android:id="@+id/layoutCuenta"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/backwindow"
+                        android:orientation="vertical">
+
+                    <!--TextView
+                            android:id="@+id/Cuenta"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="10dp"
+                            android:text="Ajustes de cuenta"
+                            android:textColor="@color/blanco"
+                            android:background="@drawable/backwindow"
+                            android:textSize="14sp"
+                            android:textAlignment="viewStart"
+                            android:fontFamily="@font/nunito_semibold" />
+
+                    <Button
+                            android:id="@+id/OpcionNotificacion"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/blanco"
+                            android:background="@drawable/backwindow"
+                            android:padding="10dp"
+                            android:fontFamily="@font/nunito"
+                            android:textSize="14sp"
+                            android:textAllCaps="false"
+                            android:text="Notificaciones"
+                            android:textAlignment="viewStart" /-->
+                </LinearLayout>
+
+                <LinearLayout
+                        android:id="@+id/layoutContacto"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/backwindow"
+                        android:orientation="vertical">
+
+                    <TextView
+                            android:id="@+id/Contacto"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="10dp"
+                            android:text="CONTACTO"
+                            android:textStyle="bold"
+                            android:textColor="@color/blanco"
+                            android:background="@drawable/backwindow"
+                            android:textAlignment="viewStart"
+                            android:textSize="14sp"
+                            android:fontFamily="@font/nunito" />
+
+                    <Button
+                            android:id="@+id/OpcionContacto"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/blanco"
+                            android:background="@drawable/backwindow"
+                            android:padding="10dp"
+                            android:fontFamily="@font/nunito"
+                            android:text="Contacto"
+                            android:textSize="14sp"
+                            android:textAllCaps="false"
+                            android:textAlignment="viewStart" />
+                </LinearLayout>
+
+                <LinearLayout
+                        android:id="@+id/layoutAcerca"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/backwindow"
+                        android:orientation="vertical">
+
+                    <TextView
+                            android:id="@+id/Acerca"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="10dp"
+                            android:text="ACERCA DE"
+                            android:textColor="@color/blanco"
+                            android:background="@drawable/backwindow"
+                            android:textAlignment="viewStart"
+                            android:textSize="14sp"
+                            android:textStyle="bold"
+                            android:fontFamily="@font/nunito" />
+
+                    <Button
+                            android:id="@+id/Opcionversion"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/blanco"
+                            android:background="@drawable/backwindow"
+                            android:padding="10dp"
+                            android:fontFamily="@font/nunito"
+                            android:text="Versión  1.0.1"
+                            android:textSize="14sp"
+                            android:textAllCaps="false"
+                            android:textAlignment="viewStart" />
+
+                    <Button
+                            android:id="@+id/OpcionAcercaDe"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/blanco"
+                            android:background="@drawable/backwindow"
+                            android:padding="10dp"
+                            android:fontFamily="@font/nunito"
+                            android:text="Acerca de ProVentas"
+                            android:textSize="14sp"
+                            android:textAllCaps="false"
+                            android:textAlignment="viewStart" />
+
+                    <Button
+                            android:id="@+id/OpcionLegales"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/blanco"
+                            android:background="@drawable/backwindow"
+                            android:padding="10dp"
+                            android:fontFamily="@font/nunito"
+                            android:text="Legales"
+                            android:textSize="14sp"
+                            android:textAllCaps="false"
+                            android:textAlignment="viewStart" />
+
+                    <Button
+                            android:id="@+id/cerrarSesion"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/blanco"
+                            android:background="@drawable/backwindow"
+                            android:padding="10dp"
+                            android:fontFamily="@font/nunito"
+                            android:text="Cerrar sesión"
+                            android:textSize="14sp"
+                            android:textAllCaps="false"
+                            android:textAlignment="viewStart"/>
+
+                </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

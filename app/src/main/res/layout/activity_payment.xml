@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".activities.PaymentActivity"
+        android:background="@color/negroprogress">
+
+    <!--Header-->
+    <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:id="@+id/lauotHeader"
+            android:background="@color/negro"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+
+        <ImageView
+                android:id="@+id/closeButton"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                app:srcCompat="@drawable/ic_close"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Selecciona tu método de pago"
+            android:fontFamily="@font/nunito_semibold"
+            android:textColor="@color/blanco"
+            android:textSize="30sp"
+            android:gravity="center"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/lauotHeader"/>
+
+    <TextView
+            android:id="@+id/textView22"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="60dp"
+            android:fontFamily="@font/nunito"
+            android:gravity="center"
+            android:text="Concepto: Pago curso Proventas"
+            android:textColor="@color/blanco"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <TextView
+            android:id="@+id/precioFinal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/nunito"
+            android:gravity="center"
+            android:text="Importe: $1,500.00 MXN"
+            android:textColor="@color/blanco"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="@+id/textView22"
+            app:layout_constraintStart_toStartOf="@+id/textView22"
+            app:layout_constraintTop_toBottomOf="@+id/textView22" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="416dp"
+            android:background="@color/negro"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView22">
+
+        <Button
+                android:id="@+id/PagoTarjeta"
+                android:layout_width="0dp"
+                android:layout_height="48dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="100dp"
+                android:layout_marginEnd="20dp"
+                android:background="@drawable/backbutton_b"
+                android:fontFamily="@font/nunito_semibold"
+                android:text="Pagar con tarjeta de débito o crédito"
+                android:textColor="@color/blanco"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+                android:id="@+id/PagoTiendas"
+                android:layout_width="0dp"
+                android:layout_height="48dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/backbutton_b"
+                android:fontFamily="@font/nunito_semibold"
+                android:text="Pagar en efectivo en tiendas"
+                android:textColor="@color/blanco"
+                app:layout_constraintEnd_toEndOf="@+id/PagoTarjeta"
+                app:layout_constraintStart_toStartOf="@+id/PagoTarjeta"
+                app:layout_constraintTop_toBottomOf="@+id/PagoTarjeta" />
+
+        <Button
+                android:id="@+id/PagoTranferencia"
+                android:layout_width="0dp"
+                android:layout_height="48dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/backbutton_b"
+                android:fontFamily="@font/nunito_semibold"
+                android:text="Pagar con transferencia bancaria"
+                android:textColor="@color/blanco"
+                app:layout_constraintEnd_toEndOf="@+id/PagoTiendas"
+                app:layout_constraintStart_toStartOf="@+id/PagoTiendas"
+                app:layout_constraintTop_toBottomOf="@+id/PagoTiendas" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

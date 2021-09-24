@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:background="@color/negro"
+        android:layout_height="wrap_content">
+
+
+    <TextView
+            android:id="@+id/tipoOrden"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/nunito"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:gravity="center"
+            android:text="Pagada"
+            android:textAlignment="center"
+            android:textColor="@color/blanco"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+            android:id="@+id/estatusOrden"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/nunito"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:text="Estatus: Activa"
+            android:textAlignment="center"
+            android:textColor="@color/blanco"
+            android:textSize="15sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tipoOrden" />
+
+    <TextView
+            android:id="@+id/FechaOrden"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:fontFamily="@font/nunito_extralight"
+            android:gravity="center"
+            android:text="Fecha: 29/10/2020"
+            android:textAlignment="center"
+            android:textColor="@color/blanco"
+            android:textSize="15sp"
+            app:layout_constraintBottom_toBottomOf="@+id/tipoOrden"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/tipoOrden" />
+
+    <TextView
+            android:id="@+id/IDOrden"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/nunito_extralight"
+            android:gravity="center"
+            android:text="ID: 46"
+            android:textAlignment="center"
+            android:textColor="@color/blanco"
+            android:textSize="15sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tipoOrden" />
+
+    <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="16dp"
+            android:background="@color/verdeoscuro"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/estatusOrden" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

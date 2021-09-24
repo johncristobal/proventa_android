@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/backwindow"
+        tools:context=".activities.CodigoAccesoActivity">
+
+    <ImageView
+            android:id="@+id/closeButton"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="30dp"
+            app:srcCompat="@drawable/ic_close"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+    <TextView
+            android:id="@+id/textView19"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="40dp"
+            android:fontFamily="@font/nunito_semibold"
+            android:text="Ingresa tu código"
+            android:textColor="@color/blanco"
+            android:textSize="25sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/closeButton" />
+
+    <EditText
+            android:id="@+id/editTextCodigo"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="40dp"
+            android:background="@drawable/back_field"
+            android:ems="10"
+            android:fontFamily="@font/nunito"
+            android:hint="Código de acceso"
+            android:inputType="textPersonName"
+            android:padding="10dp"
+            android:textColor="@color/textcolor"
+            android:textColorHint="@color/textcolor"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/textView19"
+            app:layout_constraintTop_toBottomOf="@+id/textView19" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintLayout3"
+            android:layout_width="0dp"
+            android:layout_marginStart="85dp"
+            android:layout_height="260dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginEnd="16dp"
+            android:background="@color/verdeoscuro"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/editTextCodigo"
+            app:layout_constraintTop_toBottomOf="@+id/editTextCodigo">
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <Button
+            android:id="@+id/validarcodigoButton"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:layout_marginBottom="40dp"
+            android:text="Validar"
+            android:background="@drawable/backbutton_b"
+            android:textColor="@color/blanco"
+            android:textSize="14sp"
+            android:fontFamily="@font/nunito_semibold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/editTextCodigo"
+            app:layout_constraintStart_toStartOf="@+id/editTextCodigo" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

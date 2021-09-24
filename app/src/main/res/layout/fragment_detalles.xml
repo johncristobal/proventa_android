@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".fragments.AvisoFragment"
+        android:background="@drawable/backwindow">
+
+    <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/constraintLayoutP"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/negroback">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/constraintLayout4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="32dp"
+                    android:layout_marginEnd="16dp"
+                    android:background="@color/negroprogress"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                <TextView
+                        android:id="@+id/textView6"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginTop="30dp"
+                        android:layout_marginEnd="16dp"
+                        android:fontFamily="@font/nunito_semibold"
+                        android:text="¿Qué vas a aprender?"
+                        android:textColor="@color/blanco"
+                        android:textSize="20dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.0"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                        android:id="@+id/textView8"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginEnd="35dp"
+                        android:fontFamily="@font/nunito"
+                        android:text="Anteriormente a cada venta le correspondía una compra, sin embargo, en la actualidad la experiencia digital está cambiando esto. Solo los buenos vendedores sobrevivirán a este cambio, y quienes lo hagan, serán los más valorados y cotizados por las compañías que requieren vender sus productos de persona a persona. \n\nEste curso es la mejor inversión que puedes hacer para ti,
+para capacitarte y mejorar tus habilidades como asesor de ventas."
+                        android:textColor="@color/blanco"
+                        android:textSize="14sp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="@+id/textView6"
+                        app:layout_constraintTop_toBottomOf="@+id/textView6" />
+
+                <TextView
+                        android:id="@+id/textView9"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="16dp"
+                        android:layout_marginStart="25dp"
+                        android:textSize="14sp"
+                        android:fontFamily="@font/nunito"
+                        android:textColor="@color/blanco"
+                        android:text=""
+                        app:layout_constraintEnd_toEndOf="@+id/textView8"
+                        app:layout_constraintStart_toStartOf="@+id/textView8"
+                        app:layout_constraintTop_toBottomOf="@+id/textView8" />
+
+                <ImageView
+                        android:id="@+id/imageView4"
+                        android:layout_width="match_parent"
+                        android:layout_height="180dp"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginEnd="16dp"
+                        android:src="@drawable/ventapi"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/textView9" />
+
+                <TextView
+                        android:id="@+id/textView11"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginTop="5dp"
+                        android:fontFamily="@font/nunito"
+                        android:text="Requisitos"
+                        android:textColor="@color/blanco"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/imageView4"
+                        tools:visibility="invisible" />
+
+                <TextView
+                        android:id="@+id/textView12"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginEnd="35dp"
+                        android:layout_marginBottom="150dp"
+                        android:textSize="14sp"
+                        android:fontFamily="@font/nunito"
+                        android:textColor="@color/blanco"
+                        android:text=""
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/textView11" />
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:layout_marginEnd="40dp"
+                    android:background="@color/negrodatos"
+                    app:layout_constraintBottom_toBottomOf="@+id/constraintLayout4"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/constraintLayout4">
+
+                <TextView
+                        android:id="@+id/textView13"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginTop="15dp"
+                        android:fontFamily="@font/nunito"
+                        android:textStyle="bold"
+                        android:text="Descripción"
+                        android:textColor="@color/blanco"
+                        android:textSize="18sp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                        android:id="@+id/textView14"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginEnd="60dp"
+                        android:layout_marginBottom="20dp"
+                        android:text="Proventas es un curso con el cual podrás aprender un método el cual no se enfoca en la negociación, ni en el cierre como la mayoría de los otros métodos de ventas.\n\nProventas te enseñará cómo tener más posibles clientes a tu disposición y complementa toda la experiencia y entrenamiento que tienes en ventas.
+\n\nConsta de una variedad de videos que explican:\n
+1)	¿Qué debes saber antes de salir a vender?\n
+2)	¿Cómo proyectar el éxito?\n
+3)	¿Cómo vender más para ganar más?\n
+4)	Conclusiones útiles y ejemplos para que los pongas en práctica.\n"
+                        android:textColor="@color/blanco"
+                        android:fontFamily="@font/nunito"
+                        android:textSize="14sp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/textView13" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

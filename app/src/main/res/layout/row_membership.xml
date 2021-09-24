@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:background="@color/negro"
+        android:layout_height="wrap_content">
+
+
+    <TextView
+            android:id="@+id/tipoCuenta"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/nunito"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:gravity="center"
+            android:text="Premium"
+            android:textAlignment="center"
+            android:textColor="@color/blanco"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+            android:id="@+id/estatusCuenta"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/nunito"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:text="Estatus: Activa"
+            android:textAlignment="center"
+            android:textColor="@color/blanco"
+            android:textSize="15sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tipoCuenta" />
+
+    <TextView
+            android:id="@+id/IDCuenta"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/nunito_extralight"
+            android:gravity="center"
+            android:text="ID: 46"
+            android:textAlignment="center"
+            android:textColor="@color/blanco"
+            android:textSize="15sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tipoCuenta" />
+
+    <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="16dp"
+            android:background="@color/verdeoscuro"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/estatusCuenta" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+            android:id="@+id/cuenta"
+            android:title="Mi cuenta" />
+    <item
+            android:id="@+id/membresias"
+            android:title="Membresías adicionales"/>
+    <item
+            android:id="@+id/examenes"
+            android:title="Éxamenes"/>
+
+    <item
+            android:id="@+id/ordenes"
+            android:title="Órdenes"/>
+
+    <item
+            android:id="@+id/pagos"
+            android:title="Pagos"/>
+
+    <item
+            android:id="@+id/cancelar"
+            android:title="Cancelar"/>
+
+
+</menu>
+
+

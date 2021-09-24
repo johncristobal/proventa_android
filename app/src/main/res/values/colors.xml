@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#131415</color>
+    <color name="colorPrimaryDark">#131415</color>
+    <color name="colorAccent">#FFFFFF</color>
+    <color name="gris">#cbcbcb</color>
+    <color name="grisclaro">#f3f3f3</color>
+    <color name="grisobscuro">#9d9b9b</color>
+    <color name="grisobscurodos">#808080</color>
+    <color name="gristres">#D8D8D8</color>
+    <color name="blanco">#FFFFFF</color>
+    <color name="negro">#000000</color>
+    <color name="negroback">#121311</color>
+    <color name="negrodatos">#0D0E0D</color>
+    <color name="negroprogress">#1E1F1D</color>
+    <color name="negrodos">#131415</color>
+    <color name="rojo">#E52B50</color>
+
+    <color name="verdeoscuro">#4D881E</color>
+    <color name="verdeclaro">#68C32B</color>
+    <color name="verdetres">#2c481c</color>
+    <color name="campo">#2F302E</color>
+    <color name="textcolor">#AAAAAA</color>
+    <color name="links">#884EA0</color>
+    <color name="btnmorado">#632BC3</color>
+
+</resources>

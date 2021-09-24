@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/backwindow"
+        tools:context=".activities.BuyCountsActivity">
+
+    <ImageView
+            android:id="@+id/closeButton"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="30dp"
+            app:srcCompat="@drawable/ic_close"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+    <TextView
+            android:id="@+id/textView19"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="50sp"
+            android:fontFamily="@font/nunito_semibold"
+            android:text="Adquirir membresía"
+            android:textColor="@color/blanco"
+            android:textSize="25sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/closeButton"/>
+
+    <TextView
+            android:id="@+id/textView20"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="50sp"
+            android:layout_marginTop="30sp"
+            android:fontFamily="@font/nunito"
+            android:text="¿Vas a adquirir uno o más cursos?"
+            android:textColor="@color/blanco"
+            android:textSize="15sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView19" />
+
+    <RadioGroup
+            android:id="@+id/gruporadios"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:orientation="horizontal"
+            android:gravity="center"
+            app:layout_constraintEnd_toEndOf="@+id/closeButton"
+            app:layout_constraintStart_toStartOf="@+id/textView20"
+            app:layout_constraintTop_toBottomOf="@+id/textView20">
+
+
+        <RadioButton
+                android:id="@+id/radioButtonIndividual"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:checked="true"
+                android:fontFamily="@font/nunito"
+                android:text="Invertir en un curso"
+                android:textColor="@color/blanco"
+                android:textColorHighlight="@color/verdeclaro"
+                android:textColorHint="@color/blanco"
+                android:textSize="14sp" />
+
+        <RadioButton
+                android:id="@+id/radioButtonMulti"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/nunito"
+                android:text="Invertir en multiples cursos"
+                android:textColor="@color/blanco"
+                android:textSize="14sp" />
+
+    </RadioGroup>
+
+    <TextView
+            android:id="@+id/textViewCuantas"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:fontFamily="@font/nunito"
+            android:text="Número de cuentas que deseas adquirir"
+            android:textAlignment="viewStart"
+            android:textColor="@color/blanco"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:visibility="invisible"
+            app:layout_constraintStart_toStartOf="@+id/gruporadios"
+            app:layout_constraintTop_toBottomOf="@+id/gruporadios" />
+
+    <EditText
+            android:id="@+id/cuentasNumber"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="30dp"
+            android:background="@drawable/back_field"
+            android:fontFamily="@font/nunito"
+            android:hint="0"
+            android:text="1"
+            android:visibility="invisible"
+            android:inputType="number"
+            android:padding="5dp"
+            android:textColor="@color/textcolor"
+            android:textColorHint="@color/textcolor"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/textView20"
+            app:layout_constraintTop_toBottomOf="@+id/textViewCuantas" />
+
+    <TextView
+            android:id="@+id/textView21"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:fontFamily="@font/nunito"
+            android:text="Subtotal: "
+            android:textColor="@color/blanco"
+            android:textSize="20sp"
+            android:textStyle="bold"
+
+            app:layout_constraintBottom_toTopOf="@+id/pagoCoinsButton"
+            app:layout_constraintEnd_toStartOf="@+id/textViewCantidad" />
+
+    <TextView
+            android:id="@+id/textViewCantidad"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:fontFamily="@font/nunito"
+            android:text="$1,500.00"
+            android:textColor="@color/verdeclaro"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/pagoCoinsButton"
+            app:layout_constraintEnd_toEndOf="@+id/pagoCoinsButton" />
+
+    <Button
+            android:id="@+id/pagoCoinsButton"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:layout_marginBottom="30dp"
+            android:background="@drawable/backbutton_b"
+            android:fontFamily="@font/nunito_semibold"
+            android:text="Continuar al pago"
+            android:textColor="@color/blanco"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/cuentasNumber"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="@+id/cuentasNumber" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

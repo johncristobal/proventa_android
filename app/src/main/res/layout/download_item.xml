@@ -1,0 +1,51 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/layRep"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/backwindow"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <TextView
+            android:id="@+id/NombreCap"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:background="@drawable/backwindow"
+            android:fontFamily="@font/nunito_semibold"
+            android:padding="10dp"
+            android:text="Capítulo 2"
+            android:textColor="@color/blanco"
+            android:textSize="15sp"
+            app:layout_constraintEnd_toStartOf="@+id/EliminaVideoButton"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+            android:id="@+id/MegasCap"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:background="@drawable/backwindow"
+            android:fontFamily="@font/nunito"
+            android:padding="10dp"
+            android:text="250MB"
+            android:textColor="@color/gris"
+            android:textSize="13sp"
+            app:layout_constraintEnd_toStartOf="@+id/EliminaVideoButton"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/NombreCap" />
+
+    <ImageButton
+            android:id="@+id/EliminaVideoButton"
+            android:layout_width="20dp"
+            android:layout_height="30dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="@android:color/transparent"
+            android:src="@drawable/trashicon"
+            android:textColor="@color/blanco"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

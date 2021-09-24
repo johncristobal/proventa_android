@@ -1,0 +1,388 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/backwindow"
+        tools:context=".activities.CompletarRegistroActivity">
+
+    <ScrollView
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="0dp"
+            android:layout_marginEnd="0dp"
+            android:layout_marginBottom="0dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            <TextView
+                    android:id="@+id/textView5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="32dp"
+                    android:layout_marginTop="0dp"
+                    android:fontFamily="@font/poppins_light"
+                    android:text="Completa tu registro"
+                    android:textAlignment="viewStart"
+                    android:textColor="@color/blanco"
+                    android:textSize="22sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toTopOf="@+id/NombreCompleteR"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/closeButton" />
+
+            <EditText
+                    android:id="@+id/NombreCompleteR"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_marginStart="32dp"
+                    android:layout_marginTop="32dp"
+                    android:layout_marginEnd="32dp"
+                    android:background="@drawable/back_field"
+                    android:padding="5dp"
+                    android:ems="10"
+                    android:textSize="14sp"
+                    android:hint="@string/Nombre"
+                    android:inputType="textPersonName|textEmailAddress"
+                    android:fontFamily="@font/nunito"
+                    android:textColor="@color/textcolor"
+                    android:textColorHint="@color/textcolor"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView5" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/constraintLayout3"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_marginStart="125dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="16dp"
+                    android:layout_marginBottom="12dp"
+                    android:background="@color/verdeoscuro"
+                    app:layout_constraintBottom_toTopOf="@+id/temrinosdos"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/NombreCompleteR">
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <EditText
+                    android:id="@+id/ApellidosCompleteR"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="25dp"
+                    android:background="@drawable/back_field"
+                    android:ems="10"
+                    android:hint="Apellidos"
+                    android:inputType="textPersonName|textEmailAddress"
+                    android:padding="5dp"
+                    android:textSize="14sp"
+                    android:fontFamily="@font/nunito"
+                    android:textColor="@color/textcolor"
+                    android:textColorHint="@color/textcolor"
+                    app:layout_constraintEnd_toEndOf="@+id/NombreCompleteR"
+                    app:layout_constraintStart_toStartOf="@+id/NombreCompleteR"
+                    app:layout_constraintTop_toBottomOf="@+id/NombreCompleteR"/>
+
+            <EditText
+                    android:id="@+id/CorreoCompleteR"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="25dp"
+                    android:background="@drawable/back_field"
+                    android:ems="10"
+                    android:hint="Correo electrónico"
+                    android:inputType="textPersonName"
+                    android:padding="5dp"
+                    android:textSize="14sp"
+                    android:fontFamily="@font/nunito"
+                    android:textColor="@color/textcolor"
+                    android:textColorHint="@color/textcolor"
+                    app:layout_constraintEnd_toEndOf="@+id/ApellidosCompleteR"
+                    app:layout_constraintStart_toStartOf="@+id/ApellidosCompleteR"
+                    app:layout_constraintTop_toBottomOf="@+id/ApellidosCompleteR"/>
+
+            <TextView
+                    android:id="@+id/textViewFecha"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="32dp"
+                    android:layout_marginTop="25dp"
+                    android:fontFamily="@font/nunito"
+                    android:text="Fecha de nacimiento"
+                    android:textAlignment="viewStart"
+                    android:textColor="@color/blanco"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/CorreoCompleteR" />
+
+            <LinearLayout
+                    android:id="@+id/horizontalLinear"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="16dp"
+                    android:orientation="horizontal"
+                    app:layout_constraintEnd_toStartOf="@+id/closeButton"
+                    app:layout_constraintStart_toStartOf="@+id/textViewFecha"
+                    app:layout_constraintTop_toBottomOf="@+id/textViewFecha">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginEnd="10dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/back_field">
+
+                    <Spinner
+                            android:id="@+id/spinnerDiaComplete"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/spinnerback"
+                            android:textSize="14sp" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginEnd="10dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/back_field">
+
+                    <Spinner
+                            android:id="@+id/spinnerMesComplete"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/spinnerback"
+                            android:fontFamily="@font/nunito"
+                            android:textColor="@color/textcolor"
+                            android:textSize="14sp" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/back_field">
+
+                    <Spinner
+                            android:id="@+id/spinnerAnioComplete"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/spinnerback"
+                            android:fontFamily="@font/nunito"
+                            android:textColor="@color/textcolor"
+                            android:textSize="14sp" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </LinearLayout>
+
+            <EditText
+                    android:id="@+id/postalTexComplete"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_marginStart="32dp"
+                    android:layout_marginTop="25dp"
+                    android:layout_marginEnd="32dp"
+                    android:background="@drawable/back_field"
+                    android:ems="10"
+                    android:fontFamily="@font/nunito"
+                    android:hint="Código postal"
+                    android:inputType="number"
+                    android:padding="5dp"
+                    android:textColor="@color/textcolor"
+                    android:textColorHint="@color/textcolor"
+                    android:textSize="14sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/horizontalLinear" />
+
+            <Button
+                    android:id="@+id/buttonValidarCPFull"
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:background="@android:color/transparent"
+                    android:fontFamily="@font/nunito"
+                    android:text="Validar"
+                    android:alpha="1"
+                    android:textColor="@color/verdeclaro"
+                    android:textSize="12sp"
+                    app:layout_constraintBottom_toBottomOf="@+id/postalTexComplete"
+                    app:layout_constraintEnd_toEndOf="@+id/postalTexComplete"
+                    app:layout_constraintTop_toTopOf="@+id/postalTexComplete" />
+
+            <ProgressBar
+                    android:id="@+id/progressBarValidandoFull"
+                    style="?android:attr/progressBarStyle"
+                    android:layout_marginEnd="20dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:indeterminate="true"
+                    android:alpha="0.0"
+                    app:layout_constraintBottom_toBottomOf="@+id/postalTexComplete"
+                    app:layout_constraintEnd_toEndOf="@+id/postalTexComplete"
+                    app:layout_constraintTop_toTopOf="@+id/postalTexComplete" />
+
+            <ImageView
+                    android:id="@+id/imageReadyIconFull"
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_marginEnd="30dp"
+                    android:indeterminate="true"
+                    android:alpha="0.0"
+                    android:src="@drawable/readyicon"
+                    app:layout_constraintBottom_toBottomOf="@+id/postalTexComplete"
+                    app:layout_constraintEnd_toEndOf="@+id/postalTexComplete"
+                    app:layout_constraintTop_toTopOf="@+id/postalTexComplete"/>
+
+            <EditText
+                    android:id="@+id/ContrasCompleteR"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="25dp"
+                    android:background="@drawable/back_field"
+                    android:ems="10"
+                    android:hint="@string/contrasena"
+                    android:inputType="textPassword"
+                    android:padding="5dp"
+                    android:fontFamily="@font/nunito"
+                    android:textSize="14sp"
+                    android:textColor="@color/textcolor"
+                    android:textColorHint="@color/textcolor"
+                    app:layout_constraintEnd_toEndOf="@+id/postalTexComplete"
+                    app:layout_constraintStart_toStartOf="@+id/postalTexComplete"
+                    app:layout_constraintTop_toBottomOf="@+id/postalTexComplete"/>
+
+            <EditText
+                    android:id="@+id/RepiteContrasCompleteR"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="25dp"
+                    android:background="@drawable/back_field"
+                    android:ems="10"
+                    android:hint="@string/RepiteC"
+                    android:inputType="textPassword"
+                    android:padding="5dp"
+                    android:fontFamily="@font/nunito"
+                    android:textSize="14sp"
+                    android:textColor="@color/textcolor"
+                    android:textColorHint="@color/textcolor"
+                    app:layout_constraintEnd_toEndOf="@+id/ContrasCompleteR"
+                    app:layout_constraintStart_toStartOf="@+id/ContrasCompleteR"
+                    app:layout_constraintTop_toBottomOf="@+id/ContrasCompleteR"/>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/temrinosdos"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="25dp"
+                    app:layout_constraintEnd_toEndOf="@+id/ContrasCompleteR"
+                    app:layout_constraintStart_toStartOf="@+id/ContrasCompleteR"
+                    app:layout_constraintTop_toBottomOf="@+id/RepiteContrasCompleteR">
+
+                <androidx.appcompat.widget.AppCompatCheckBox
+                        android:id="@+id/terminosOkComplete"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/nunito"
+                        android:textSize="14sp"
+                        android:text="@string/terminos"
+                        android:textColor="@color/blanco"
+                        android:textColorHint="@color/blanco"
+                        android:textColorLink="@color/blanco"
+                        app:buttonTint="@color/blanco"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                        android:id="@+id/textViewLiga1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="4dp"
+                        android:text="términos y"
+                        android:fontFamily="@font/nunito"
+                        android:textSize="14sp"
+                        android:textColor="@color/links"
+                        app:layout_constraintBottom_toBottomOf="@+id/terminosOkComplete"
+                        app:layout_constraintStart_toEndOf="@+id/terminosOkComplete"
+                        app:layout_constraintTop_toTopOf="@+id/terminosOkComplete" />
+
+                <TextView
+                        android:id="@+id/textViewLiga2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/nunito"
+                        android:layout_marginStart="32dp"
+                        android:text="condiciones y política de privacidad"
+                        android:textColor="@color/links"
+                        android:textSize="14sp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/terminosOkComplete" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <Button
+                    android:id="@+id/ContinuarregistroComplete"
+                    android:layout_width="0dp"
+                    android:layout_height="48dp"
+                    android:layout_marginTop="16dp"
+                    android:background="@drawable/backbutton_b"
+                    android:fontFamily="@font/nunito_semibold"
+                    android:text="Comenzar mi curso"
+                    android:layout_marginBottom="32dp"
+                    android:textColor="@color/blanco"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="@+id/RepiteContrasCompleteR"
+                    app:layout_constraintStart_toStartOf="@+id/RepiteContrasCompleteR"
+                    app:layout_constraintTop_toBottomOf="@+id/temrinosdos" />
+
+            <!--Button
+                    android:id="@+id/CancelarButton"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:text="Cancelar"
+                    android:background="@android:color/transparent"
+                    android:fontFamily="@font/nunito"
+                    android:textColor="@color/blanco"
+                    android:visibility="gone"
+                    app:layout_constraintEnd_toEndOf="@+id/registro"
+                    app:layout_constraintStart_toStartOf="@+id/registro"
+                    app:layout_constraintTop_toBottomOf="@+id/registro" /-->
+
+            <ImageView
+                    android:id="@+id/closeButton"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="16dp"
+                    app:srcCompat="@drawable/ic_close"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"/>
+
+            <!--Button
+                    android:id="@+id/CancelarBoton"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:text="Cancelar"
+                    android:textAllCaps="false"
+                    android:background="@android:color/transparent"
+                    app:layout_constraintEnd_toEndOf="@+id/registro"
+                    app:layout_constraintStart_toStartOf="@+id/registro"
+                    app:layout_constraintTop_toBottomOf="@+id/registro" /-->
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

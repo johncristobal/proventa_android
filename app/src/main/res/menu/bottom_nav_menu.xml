@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+            android:id="@+id/curso"
+            android:icon="@drawable/ic_videowhite"
+            android:title="@string/curso_res"/>
+
+    <item
+            android:id="@+id/perfil"
+            android:icon="@drawable/ic_userwhite"
+            android:title="@string/prefil_res"/>
+
+    <item
+            android:id="@+id/ajustes"
+            android:icon="@drawable/ic_settingswhite"
+            android:title="@string/ajustes_res"/>
+
+</menu>

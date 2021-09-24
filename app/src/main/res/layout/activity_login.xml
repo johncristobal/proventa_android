@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/ConstraintLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/backwindow"
+        tools:context=".activities.LoginActivity">
+
+    <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                <EditText
+                        android:id="@+id/nombre_usuario"
+                        android:layout_width="0dp"
+                        android:layout_height="40dp"
+                        android:layout_marginStart="32dp"
+                        android:layout_marginTop="16dp"
+                        android:layout_marginEnd="32dp"
+                        android:layout_marginBottom="25dp"
+                        android:textSize="14sp"
+                        android:background="@drawable/back_field"
+                        android:ems="10"
+                        android:hint="@string/correo"
+                        android:inputType="textPersonName|textEmailAddress"
+                        android:padding="5dp"
+                        android:fontFamily="@font/nunito"
+                        android:textColor="@color/textcolor"
+                        android:textColorHint="@color/textcolor"
+                        app:layout_constraintBottom_toTopOf="@+id/contraseña"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/constraintLayout3" />
+
+                <EditText
+                        android:id="@+id/contraseña"
+                        android:layout_width="0dp"
+                        android:layout_height="40dp"
+                        android:layout_marginBottom="25dp"
+                        android:background="@drawable/back_field"
+                        android:ems="10"
+                        android:hint="@string/contrasena"
+                        android:inputType="textPassword"
+                        android:padding="5dp"
+                        android:textSize="14sp"
+                        android:textColor="@color/textcolor"
+                        android:textColorHint="@color/textcolor"
+                        android:fontFamily="@font/nunito"
+                        app:layout_constraintBottom_toTopOf="@+id/button"
+                        app:layout_constraintEnd_toEndOf="@+id/nombre_usuario"
+                        app:layout_constraintStart_toStartOf="@+id/nombre_usuario"/>
+
+                <Button
+                        android:id="@+id/button"
+                        android:layout_width="0dp"
+                        android:layout_height="48dp"
+                        android:layout_marginBottom="20dp"
+                        android:text="@string/login"
+                        android:background="@drawable/backbutton_b"
+                        android:fontFamily="@font/nunito_semibold"
+                        android:textColor="@color/blanco"
+                        android:textSize="14sp"
+                        app:layout_constraintBottom_toTopOf="@+id/contraseniaButton"
+                        app:layout_constraintEnd_toEndOf="@+id/contraseña"
+                        app:layout_constraintStart_toStartOf="@+id/contraseña" />
+
+                <Button
+                        android:id="@+id/contraseniaButton"
+                        android:layout_width="0dp"
+                        android:layout_height="30dp"
+                        android:layout_marginBottom="40dp"
+                        android:background="@android:color/transparent"
+                        android:fontFamily="@font/nunito_semibold"
+                        android:text="Olvidé mi contraseña"
+                        android:textColor="@color/blanco"
+                        android:textSize="14sp"
+                        app:layout_constraintBottom_toTopOf="@+id/tv5"
+                        app:layout_constraintEnd_toEndOf="@+id/button"
+                        app:layout_constraintStart_toStartOf="@+id/button" />
+
+                <Button
+                        android:id="@+id/registro"
+                        android:layout_width="0dp"
+                        android:layout_height="30dp"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginEnd="8dp"
+                        android:layout_marginBottom="8dp"
+                        android:background="@android:color/transparent"
+                        android:text="@string/registro"
+                        android:textAllCaps="false"
+                        android:fontFamily="@font/nunito"
+                        android:textSize="16sp"
+                        android:textColor="@color/verdeclaro"
+                        app:layout_constraintBottom_toTopOf="@+id/buttonCodigo"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"/>
+
+                <Button
+                        android:id="@+id/buttonCodigo"
+                        android:layout_width="0dp"
+                        android:layout_height="48dp"
+                        android:layout_marginBottom="30dp"
+                        android:background="@color/verdetres"
+                        android:fontFamily="@font/nunito_semibold"
+                        android:text="TENGO UN CÓDIGO DE ACCESO"
+                        android:textColor="@color/verdeoscuro"
+                        android:textSize="14sp"
+                        android:visibility="invisible"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="@+id/button"
+                        app:layout_constraintStart_toStartOf="@+id/button" />
+
+
+                <TextView
+                        android:id="@+id/tv5"
+                        android:layout_width="185dp"
+                        android:layout_height="30dp"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginEnd="8dp"
+                        android:text="¿No tienes una cuenta?"
+                        android:textAlignment="center"
+                        android:fontFamily="@font/nunito"
+                        android:textColor="@color/blanco"
+                        app:layout_constraintBottom_toTopOf="@+id/registro"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent" />
+
+                <ImageView
+                        android:id="@+id/closeButton"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_marginTop="16dp"
+                        android:layout_marginEnd="16dp"
+                        android:visibility="visible"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:srcCompat="@drawable/ic_close" />
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                        android:id="@+id/constraintLayout3"
+                        android:layout_width="0dp"
+                        android:layout_height="180dp"
+                        android:layout_marginStart="125dp"
+                        android:layout_marginTop="16dp"
+                        android:background="@color/verdeoscuro"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/imageView3">
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <TextView
+                        android:id="@+id/textView4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/poppins_light"
+                        android:text="Aprende a vender\ncomo un experto"
+                        android:textAlignment="viewStart"
+                        android:textColor="@color/blanco"
+                        android:textSize="32sp"
+                        app:layout_constraintBottom_toBottomOf="@+id/constraintLayout3"
+                        app:layout_constraintStart_toStartOf="@+id/imageView3"
+                        app:layout_constraintTop_toTopOf="@+id/constraintLayout3" />
+
+                <ImageView
+                        android:id="@+id/imageView3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="35dp"
+                        android:layout_marginStart="24dp"
+                        android:layout_marginTop="24dp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:srcCompat="@drawable/ic_proventaslogo" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+<!--
+* Revisar
+    - checar cuando es fuente regular o semibold
+    - checar tamaño fuente en EditText son 14 sp
+    - checar tamaño de fuente en titulos son 22 sp
+    - checar botones son mayus en este caso
+    - mal uso de  android:layout_marginStart="210dp" (perfilfragment)
+        en vez de eso se usa un gravityi para alinear a la izquierda
+
+    * verificar height (alto) de edittext, son 40dp
+
+-->

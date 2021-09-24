@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/backwindow"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        tools:context=".fragments.RegisterPartAFragment">
+
+    <ScrollView
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="0dp"
+            android:layout_marginEnd="0dp"
+            android:layout_marginBottom="0dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            <TextView
+                    android:id="@+id/textView5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="32dp"
+                    android:layout_marginTop="40dp"
+                    android:fontFamily="@font/poppins_light"
+                    android:text="Registro"
+                    android:textAlignment="viewStart"
+                    android:textColor="@color/blanco"
+                    android:textSize="22sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toTopOf="@+id/NombreR"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/closeButton" />
+
+            <EditText
+                    android:id="@+id/NombreR"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_marginStart="32dp"
+                    android:layout_marginTop="32dp"
+                    android:layout_marginEnd="32dp"
+                    android:background="@drawable/back_field"
+                    android:padding="5dp"
+                    android:ems="10"
+                    android:textSize="14sp"
+                    android:hint="@string/Nombre"
+                    android:inputType="textPersonName|textEmailAddress"
+                    android:fontFamily="@font/nunito"
+                    android:textColor="@color/textcolor"
+                    android:textColorHint="@color/textcolor"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView5" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/constraintLayout3"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_marginStart="125dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="16dp"
+                    android:layout_marginBottom="12dp"
+                    android:background="@color/verdeoscuro"
+                    app:layout_constraintBottom_toTopOf="@+id/temrinosdos"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/NombreR">
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <EditText
+                    android:id="@+id/ApellidosR"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="25dp"
+                    android:background="@drawable/back_field"
+                    android:ems="10"
+                    android:hint="Apellidos"
+                    android:inputType="textPersonName|textEmailAddress"
+                    android:padding="5dp"
+                    android:textSize="14sp"
+                    android:fontFamily="@font/nunito"
+                    android:textColor="@color/textcolor"
+                    android:textColorHint="@color/textcolor"
+                    app:layout_constraintEnd_toEndOf="@+id/NombreR"
+                    app:layout_constraintStart_toStartOf="@+id/NombreR"
+                    app:layout_constraintTop_toBottomOf="@+id/NombreR"/>
+
+            <EditText
+                    android:id="@+id/CorreoR"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="25dp"
+                    android:background="@drawable/back_field"
+                    android:ems="10"
+                    android:hint="Correo electrónico"
+                    android:inputType="textPersonName"
+                    android:padding="5dp"
+                    android:textSize="14sp"
+                    android:fontFamily="@font/nunito"
+                    android:textColor="@color/textcolor"
+                    android:textColorHint="@color/textcolor"
+                    app:layout_constraintEnd_toEndOf="@+id/ApellidosR"
+                    app:layout_constraintStart_toStartOf="@+id/ApellidosR"
+                    app:layout_constraintTop_toBottomOf="@+id/ApellidosR"/>
+
+            <EditText
+                    android:id="@+id/ContrasR"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="25dp"
+                    android:background="@drawable/back_field"
+                    android:ems="10"
+                    android:hint="@string/contrasena"
+                    android:inputType="textPassword"
+                    android:padding="5dp"
+                    android:fontFamily="@font/nunito"
+                    android:textSize="14sp"
+                    android:textColor="@color/textcolor"
+                    android:textColorHint="@color/textcolor"
+                    app:layout_constraintEnd_toEndOf="@+id/CorreoR"
+                    app:layout_constraintStart_toStartOf="@+id/CorreoR"
+                    app:layout_constraintTop_toBottomOf="@+id/CorreoR"/>
+
+            <EditText
+                    android:id="@+id/RepiteContrasR"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="25dp"
+                    android:background="@drawable/back_field"
+                    android:ems="10"
+                    android:hint="@string/RepiteC"
+                    android:inputType="textPassword"
+                    android:padding="5dp"
+                    android:fontFamily="@font/nunito"
+                    android:textSize="14sp"
+                    android:textColor="@color/textcolor"
+                    android:textColorHint="@color/textcolor"
+                    app:layout_constraintEnd_toEndOf="@+id/ContrasR"
+                    app:layout_constraintStart_toStartOf="@+id/ContrasR"
+                    app:layout_constraintTop_toBottomOf="@+id/ContrasR"/>
+
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/temrinosdos"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="25dp"
+                    app:layout_constraintEnd_toEndOf="@+id/ContrasR"
+                    app:layout_constraintStart_toStartOf="@+id/ContrasR"
+                    app:layout_constraintTop_toBottomOf="@+id/RepiteContrasR">
+
+                <androidx.appcompat.widget.AppCompatCheckBox
+                        android:id="@+id/terminosOk"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/nunito"
+                        android:textSize="14sp"
+                        android:text="@string/terminos"
+                        android:textColor="@color/blanco"
+                        android:textColorHint="@color/blanco"
+                        android:textColorLink="@color/blanco"
+                        app:buttonTint="@color/blanco"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                        android:id="@+id/textViewLiga1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="4dp"
+                        android:text="términos y"
+                        android:fontFamily="@font/nunito"
+                        android:textSize="14sp"
+                        android:textColor="@color/links"
+                        app:layout_constraintBottom_toBottomOf="@+id/terminosOk"
+                        app:layout_constraintStart_toEndOf="@+id/terminosOk"
+                        app:layout_constraintTop_toTopOf="@+id/terminosOk" />
+
+                <TextView
+                        android:id="@+id/textViewLiga2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/nunito"
+                        android:layout_marginStart="32dp"
+                        android:text="condiciones y política de privacidad"
+                        android:textColor="@color/links"
+                        android:textSize="14sp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/terminosOk" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <Button
+                    android:id="@+id/Continuarregistro"
+                    android:layout_width="0dp"
+                    android:layout_height="48dp"
+                    android:layout_marginTop="90dp"
+                    android:background="@drawable/backbutton_b"
+                    android:fontFamily="@font/nunito_semibold"
+                    android:text="Continuar"
+                    android:layout_marginBottom="32dp"
+                    android:textColor="@color/blanco"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="@+id/RepiteContrasR"
+                    app:layout_constraintStart_toStartOf="@+id/RepiteContrasR"
+                    app:layout_constraintTop_toBottomOf="@+id/temrinosdos" />
+
+            <!--Button
+                    android:id="@+id/CancelarButton"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:text="Cancelar"
+                    android:background="@android:color/transparent"
+                    android:fontFamily="@font/nunito"
+                    android:textColor="@color/blanco"
+                    android:visibility="gone"
+                    app:layout_constraintEnd_toEndOf="@+id/registro"
+                    app:layout_constraintStart_toStartOf="@+id/registro"
+                    app:layout_constraintTop_toBottomOf="@+id/registro" /-->
+
+            <ImageView
+                    android:id="@+id/closeButton"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="16dp"
+                    app:srcCompat="@drawable/ic_close"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"/>
+
+            <!--Button
+                    android:id="@+id/CancelarBoton"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:text="Cancelar"
+                    android:textAllCaps="false"
+                    android:background="@android:color/transparent"
+                    app:layout_constraintEnd_toEndOf="@+id/registro"
+                    app:layout_constraintStart_toStartOf="@+id/registro"
+                    app:layout_constraintTop_toBottomOf="@+id/registro" /-->
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

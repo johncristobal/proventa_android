@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".fragments.AvisoFragment">
+
+    <ProgressBar
+            android:id="@+id/loadingAviso"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:indeterminate="true"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+    <WebView
+            android:id="@+id/avisoView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    <!--ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/gris"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/backwindow">
+        <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                android:text="written by Cicero in 45 BC Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium,
+            totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et\n\nquasi architecto beatae vitae dicta sunt explicabo.
+            Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui
+            ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem\n\n ipsum quia dolor sit amet, consectetur,
+            adipisci velit, sed quia non numquam eius modi tempora\n\nincidunt ut labore et dolore magnam aliquam quaerat voluptatem.
+            Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur?
+            Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse \n\nquam nihil molestiae consequatur, vel illum qui dolorem eum fugiat
+            quo voluptas nulla pariatur?"
+                android:fontFamily="@font/nunito"
+                android:textColor="@color/blanco"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView-->
+
+</androidx.constraintlayout.widget.ConstraintLayout>

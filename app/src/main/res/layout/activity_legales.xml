@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".activities.LegalesActivity">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:id="@+id/lauotHeader"
+        android:background="@drawable/backwindow"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+    <ImageButton
+            android:id="@+id/ReturnButton"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:src="@drawable/backscreenicon"
+            android:textColor="@color/verdeclaro"
+            android:textSize="12sp"
+            android:fontFamily="@font/nunito"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+            android:id="@+id/cursoTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Legales"
+            android:textAlignment="center"
+            android:fontFamily="@font/nunito_semibold"
+            android:textColor="@color/blanco"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/atencion"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:background="@color/rojo"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/lauotHeader">
+
+        <TextView
+                android:id="@+id/advertencia"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/nunito"
+                android:text="ATÉNCION: Este curso es una herramienta de aprendizaje y el resultado de las ventas no es responsabilidad del mismo curso."
+                android:textColor="@color/blanco"
+                android:textSize="14sp"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="32dp"
+                android:gravity="center|start"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+    <!--com.google.android.material.appbar.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/blanco"
+            android:theme="@style/AppTheme.AppBarOverlay">
+
+        <TextView
+                android:id="@+id/title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:minHeight="?actionBarSize"
+                android:padding="@dimen/appbar_padding"
+                android:text="Legales"
+                android:textAppearance="@style/TextAppearance.Widget.AppCompat.Toolbar.Title" />
+
+        <com.google.android.material.tabs.TabLayout
+                android:id="@+id/tabs"
+                android:layout_width="406dp"
+                android:layout_height="wrap_content"
+                android:background="@color/gris" />
+
+    </com.google.android.material.appbar.AppBarLayout-->
+
+    <com.google.android.material.tabs.TabLayout
+            android:id="@+id/tabs"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:background="@drawable/backwindow"
+            app:tabTextColor="@color/blanco"
+            app:tabIndicatorColor="@color/btnmorado"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:tabTextAppearance="@style/tab_text"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/atencion" />
+
+    <androidx.viewpager.widget.ViewPager
+            android:id="@+id/view_pager"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tabs" >
+
+    </androidx.viewpager.widget.ViewPager>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

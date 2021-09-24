@@ -1,0 +1,110 @@
+<resources>
+    <string name="app_name">ProVentas</string>
+    <string name="contrasena">Contraseña</string>
+    <string name="usuario">usuario</string>
+    <string name="correo">Correo electrónico</string>
+    <string name="login">Iniciar sesión</string>
+    <string name="registro">Registrate</string>
+    <string name="textview">TextView</string>
+    <string name="ApPat">Apellido Paterno</string>
+    <string name="ApMat">Apellido Materno</string>
+    <string name="Nombre">Nombre</string>
+    <string name="preferences">proventa</string>
+    <string name="title_activity_principal">PrincipalActivity</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+    <string name="menu_tools">Tools</string>
+    <string name="menu_share">Share</string>
+    <string name="menu_send">Send</string>
+    <string name="Bienvenido">Mi Perfil</string>
+    <string name="dg">Datos Generales</string>
+    <string name="nd">Luis Enrique Lopez</string>
+    <string name="correoD">werever231@gmail.com</string>
+    <string name="nombreEmpresa">Empresa</string>
+    <string name="empresa">Vera Company</string>
+    <string name="Pass">Contraseña</string>
+    <string name="contrasenaD">******</string>
+    <string name="comentario">Escribe aqui tus comentarios o dudas...</string>
+    <string name="envia">Enviar</string>
+    <string name="repitecontr">Repetir Contraseña</string>
+    <string name="guarda">Guardar</string>
+    <string name="Edita">Edita tu perfil</string>
+    <string name="title_activity_dashboard">DashboardActivity</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="RepiteC">Confirma tu contraseña</string>
+    <string name="terminos">He leido y acepto los</string>
+    <string name="Regresar">Regresar</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="curso_res">Curso</string>
+    <string name="prefil_res">Perfil</string>
+    <string name="ajustes_res">Ajustes</string>
+    <string name="title_activity_legales">LegalesActivity</string>
+    <string name="tab_text_1">Términos y condiciones</string>
+    <string name="tab_text_2">Aviso de privacidad</string>
+
+    <string name="day_picker">Día</string>
+    <string-array name="item_day">
+        <item>01</item>
+        <item>02</item>
+        <item>03</item>
+        <item>04</item>
+        <item>05</item>
+        <item>06</item>
+        <item>07</item>
+        <item>08</item>
+        <item>09</item>
+        <item>10</item>
+        <item>11</item>
+        <item>12</item>
+        <item>13</item>
+        <item>14</item>
+        <item>15</item>
+        <item>16</item>
+        <item>17</item>
+        <item>18</item>
+        <item>19</item>
+        <item>20</item>
+        <item>21</item>
+        <item>22</item>
+        <item>23</item>
+        <item>24</item>
+        <item>25</item>
+        <item>26</item>
+        <item>27</item>
+        <item>28</item>
+        <item>29</item>
+        <item>30</item>
+        <item>31</item>
+    </string-array>
+
+    <string name="month_picker">Mes</string>
+    <string-array name="item_month">
+        <item>01</item>
+        <item>02</item>
+        <item>03</item>
+        <item>04</item>
+        <item>05</item>
+        <item>06</item>
+        <item>07</item>
+        <item>08</item>
+        <item>09</item>
+        <item>10</item>
+        <item>11</item>
+        <item>12</item>
+    </string-array>
+    <string name="title_activity_examen">ExamenActivity</string>
+    <string name="tab_text_3">Términos de uso</string>
+    <string name="acercade">Actualmente todas las marcas libran una batalla por vender más y poder derrotar a sus competidores en una pelea comercial que se hace cada vez más agresiva.\n\nLas áreas comerciales de empresas grandes y pequeñas requieren Personal Comercial mejor capacitado, con Técnicas de Ventas que les permitan llevar adelante a esas empresas.\n\nLos buenos vendedores, bien capacitados, tienen las puertas abiertas en cualquier empresa que venda un producto o servicio. Esos buenos vendedores constantemente buscan Cursos de Ventas, leen libros, aprenden de los más experimentados y se auto-capacitan mediante Cursos de Venta Online.\n\nEl aprendizaje en Ventas nunca termina. Estos vendedores exitosos son los que se mantienen actualizados constantemente y están a la cacería de Tips de Ventas en muchos frentes.\n\nPero…vender más no es cuestión de hablar mucho, o jugar con descuentos. Para vender más se requiere una Estrategia Comercial de Ventas completa, bien enfocada a la realidad del Inventario que se tenga disponible. Las mejores Estrategias de Ventas consideran ese Inventario y el Perfil de Consumidor como parte fundamental del Proceso de Ventas.\n\nPROVENTAS es un Curso de Ventas online que le permite a estos profesionales autocapacitarse en el momento que más les convenga, aprovechando los múltiples tiempos muertos y de espera a los que la modernidad nos obliga.\n\nEste Curso de Ventas Online de PROVENTAS es el complemento perfecto de otros Cursos de Ventas que ya existen ya que la mayoría de ellos, se enfocan en el contacto con el cliente, manejo de objeciones y cierre. Este nuevo conocimiento es útil así como también, tener muchos prospectos a los cuáles poder aplicarles esas técnicas.\n\nEl Curso de Ventas Online PROVENTAS se dirige específicamente a la etapa de Prospección dentro del Proceso Comercial. La prospección es lo que acerca a más posibles clientes a la Fuerza de Ventas.\n\nCon el curso en línea de PROVENTAS es posible aprender a prospectar más y mejor. Cuando se tienen más prospectos, se tienen más oportunidad de venta.\n\nUsualmente esas personas que son exitosas en las ventas tienen poco tiempo disponible para asistir a más Cursos de Ventas y más lectura de materiales que les ayudan a afinar su técnica y adquirir más Tips de Ventas. Por eso un Curso de Ventas Online -como el de PROVENTAS- es tan útil para esos profesionales que requieren saber más para poder vender más.\n\nEl Curso de Ventas Online PROVENTAS puede permitir que las áreas comerciales construyan una Estrategia Comercial de Ventas efectiva, basada en prospectar más y mejor. Si un profesional de las ventas aprende a prospectar más y mejor, sus oportunidades comerciales se pueden ampliar.\n\nDentro del Curso de Ventas PROVENTAS aparece conocimiento específico de Prospección de ventas y que los profesionales de ventas pueden aprovechar.</string>
+</resources>

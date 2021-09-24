@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="12dp"
+        android:background="@color/negroback"
+        xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                <TextView
+                        android:id="@+id/NumeroPregunta"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginTop="20dp"
+                        android:fontFamily="@font/nunito_semibold"
+                        android:text="TextView"
+                        android:textColor="@color/grisobscurodos"
+                        android:textSize="15sp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                        android:id="@+id/username"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginEnd="20dp"
+                        android:fontFamily="@font/nunito_semibold"
+                        android:padding="5dp"
+                        android:text="Pregunta..."
+                        android:textColor="@color/blanco"
+                        android:textSize="15sp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.0"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/NumeroPregunta" />
+
+                <RadioGroup
+                        android:id="@+id/opcionesGrupo"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/username">
+
+                    <RadioButton
+                            android:id="@+id/Opcion1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="20dp"
+                            android:layout_marginTop="15dp"
+                            android:buttonTint="@color/blanco"
+                            android:fontFamily="@font/nunito"
+                            android:checked="true"
+                            android:text="opcion1"
+                            android:textColor="@color/blanco"
+                            android:textSize="12sp"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/username" />
+
+                    <RadioButton
+                            android:id="@+id/Opcion2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="20dp"
+                            android:layout_marginTop="15dp"
+                            android:buttonTint="@color/blanco"
+                            android:fontFamily="@font/nunito"
+                            android:text="Opcion2"
+                            android:textColor="@color/blanco"
+                            android:textSize="12sp"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/Opcion1" />
+
+                    <RadioButton
+                            android:id="@+id/Opcion3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="20dp"
+                            android:layout_marginTop="15dp"
+                            android:buttonTint="@color/blanco"
+                            android:fontFamily="@font/nunito"
+                            android:text="Opcion3"
+                            android:textColor="@color/blanco"
+                            android:textSize="12sp"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/Opcion2" />
+
+                    <RadioButton
+                            android:id="@+id/Opcion4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="20dp"
+                            android:layout_marginTop="15dp"
+                            android:layout_marginBottom="50dp"
+                            android:buttonTint="@color/blanco"
+                            android:fontFamily="@font/nunito"
+                            android:text="Opcion4"
+                            android:textColor="@color/blanco"
+                            android:textSize="12sp"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/Opcion3" />
+                </RadioGroup>
+
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
